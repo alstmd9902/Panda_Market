@@ -1,0 +1,231 @@
+@charset "UTF-8";
+:root {
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --font-weight-semiBold: 600;
+  --font-weight-regular: 400;
+  --line-height-42: 42px;
+  --line-height-42: 32px;
+  --line-height-26: 26px;
+  --line-height-24: 24px;
+  --line-height-22: 22px;
+  --line-height-20: 20px;
+  --line-height-18: 18px;
+  --text-3xl: 32px;
+  --text-26: 26px;
+  --text-2xl: 24px;
+  --text-xl: 20px;
+  --text-2lg: 18px;
+  --text-lg: 16px;
+  --text-md: 14px;
+  --text-sm: 13px;
+  --text-xs: 12px;
+  --color-primary-30: #b2daff;
+  --color-primary-50: #52a2ff;
+  --color-primary-100: #3692ff;
+  --color-primary-200: #1967d6;
+  --color-primary-300: #1251aa;
+  --color-error: #f74747;
+  --color-gray-900: #111827;
+  --color-gray-800: #1f2937;
+  --color-gray-700: #374151;
+  --color-gray-600: #4b5563;
+  --color-gray-500: #6b7280;
+  --color-gray-300: #9ca3af;
+  --color-gray-200: #e5e7eb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-50: #f9fafb;
+  --color-white: #ffffff;
+  /* --main-img:url("https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAzMjVfMTA5%2FMDAxNzExMzcyNDMwMDA0.PAAKwnwMxkbjkumD5Q9-1tG5RyyqQ39Nb8FeaJi5R3gg.db8yYRm5e68QXofsy28CrYM2SAaduiMCdt2UGgNBswUg.PNG%2Fimage.png&type=sc960_832"); */
+
+  /* background-image: var(--main-img);
+  background-size: contain;
+  background-repeat: no-repeat; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: var(--text-3xl);
+  line-height: var(--lineheight-42);
+  font-weight: var(--font-weight-bold);
+}
+
+h2,
+h3 {
+  font-size: var(--text-2xl);
+  line-height: var(--line-height-32);
+  font-weight: var(--font-weight-semiBold);
+}
+
+p {
+  font-size: var(--text-lg);
+  line-height: var(--line-height-18);
+  font-weight: var(--font-weight-medium);
+}
+
+a,
+span,
+img {
+  vertical-align: top;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+a {
+  all: unset;
+}
+
+/* mobile */
+
+/* 해더영역 */
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.login-btn {
+  border-radius: 8px;
+  padding: 12px 35px;
+  background-color: var(--color-primary-100);
+  color: var(--color-white);
+  font-size: var(--text-sm);
+}
+
+/* 배경색 */
+.article_bg_color {
+  background-color: var(--color-primary-30);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+}
+
+.article_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main_img {
+  width: 100%;
+}
+
+/* main text 영역 */
+.article_title_wrap {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.tilte_text {
+  padding: 5% 20%;
+}
+
+.main_btn {
+  background-color: var(--color-primary-100);
+  color: var(--color-white);
+  border-radius: 30px;
+  padding: 10px 20%;
+}
+
+/* section 구역 */
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10% 0;
+  gap: 30px;
+}
+
+.section_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 2%;
+}
+
+.article_section_img {
+  width: 100%;
+}
+
+.text_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text_color {
+  color: var(--color-primary-100);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 10px;
+}
+
+.text_h3 {
+  margin-bottom: 10px;
+  font-size: var(--text-2lg);
+}
+.text_p {
+  line-height: 1.5;
+}
+
+/* search text */
+.search_text_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+}
+
+/* article 구역 */
+.article_title_wrap2 {
+  text-align: center;
+  width: 100%;
+}
+
+.tilte2_text {
+  padding: 25% 0;
+}
+
+/* footer 구역 */
+footer {
+  background-color: var(--color-gray-900);
+  padding: 10% 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer_text_color {
+  color: var(--color-gray-300);
+}
+
+.footer_text_color1 {
+  color: var(--color-gray-100);
+}
+
+.content_wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 5%;
+}
+
+.content_wrap > div:first-child {
+  order: 2;
+}
+
+.icons {
+  gap: 10px;
+}
+/* mobile end */
