@@ -1,0 +1,80 @@
+/* 태블릿 744px 이상 */
+@media screen and (min-width: 744px) {
+  .br {
+    display: none;
+  }
+  .content_wrap {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+/* pc 1200px 이상 */
+@media screen and (min-width: 1200px) {
+  /* main */
+  .article_container {
+    flex-direction: row;
+  }
+
+  .tilte_text{
+    text-align: left;
+  }
+
+  .pc_logo{
+    display: block;
+  }
+
+  .mo_logo{
+    display: none;
+  }
+
+  
+  /* article 1 */
+  .section_container {
+    width: 70%;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  /* search 영역 */
+  .search_box{
+    flex-direction: row-reverse;
+  }
+
+  .text_wrap {
+    width: 40%;
+  }
+
+  .article_section_img2{
+    width: 100%;
+  }
+
+  .main_btn {
+    padding: 10px 80px;
+  }
+
+  .br {
+    display: block;
+  }
+
+  .br2 {
+    display: block;
+  }
+
+  .text_h3 {
+    font-size: var(--text-2xl);
+  }
+
+
+  /* footer 영역 */
+  .content_wrap > div:first-child {
+    order: 0;
+  }
+  .content_wrap {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

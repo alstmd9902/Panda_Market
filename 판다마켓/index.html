@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./pc.css" />
   </head>
   <body>
     <!-- 해더 영역 -->
     <header>
       <nav class="nav">
         <h1>
-          <img src="./img/m.logo.png" alt="logo" />
+          <img class="mo_logo" src="./img/m.logo.png" alt="logo" />
+          <img class="pc_logo" src="./img/Property 1=md.png" alt="logo" />
         </h1>
         <a href="">
           <button class="login-btn">로그인</button>
@@ -23,8 +25,12 @@
     <main class="article_bg_color">
       <section class="article_container">
         <div class="article_title_wrap">
-          <h2 class="tilte_text">일상의 모든 물건을 거래해 보세요</h2>
-          <a href=""><button class="main_btn">구경하러 가기</button></a>
+          <h2 class="tilte_text">
+            일상의 모든 물건을 <br class="br" />거래해 보세요
+          </h2>
+          <a class="a" href=""
+            ><button class="main_btn">구경하러 가기</button></a
+          >
         </div>
         <div>
           <img class="main_img" src="./img/Img_home_top.png" alt="" />
@@ -33,56 +39,76 @@
     </main>
 
     <!-- hot item 영역 -->
-    <article class="section1">
+    <article class="article1">
       <section class="section_container">
-        <div class="img_wrap">
-          <img class="article_section_img" src="./img/Img_home_01.png" alt="" />
-        </div>
-        <div class="text_wrap">
-          <span class="text_color">Hot item</span>
-          <h3 class="text_h3">인기 상품을 확인해보세요</h3>
-          <p class="text_p">
-            가장 HOT한 중고거래 물품을<br />
-            판다 마켓에서 확인해보세요
-          </p>
-        </div>
-      </section>
-
-      <!-- search 영역 -->
-      <section class="section_container">
-        <div class="img_wrap">
-          <img class="article_section_img" src="./img/Img_home_02.png" alt="" />
-        </div>
-        <div class="search_text_wrap">
-          <span class="text_color">Search</span>
-          <h3 class="text_h3">구매를 원하는 상품을 검색하세요</h3>
-          <p class="text_p">
-            구매하고 싶은 물품은 검색해서<br />
-            쉽게 찾아보세요
-          </p>
-        </div>
-      </section>
-
-      <!-- register 영역 -->
-      <section class="section_container">
-        <div class="img_wrap">
-          <img class="article_section_img" src="./img/Img_home_01.png" alt="" />
-        </div>
-        <div class="text_wrap">
-          <span class="text_color">register</span>
-          <h3 class="text_h3">판매를 원하는 상품을 등록하세요</h3>
-          <p class="text_p">
-            어떤 물건이든 판매하고 싶은 상품을<br />
-            쉽게 등록하세요
-          </p>
+            <img
+              class="article_section_img"
+              src="./img/Img_home_01.png"
+              alt=""
+            />
+          <div class="text_wrap">
+            <span class="text_color">Hot item</span>
+            <h3 class="text_h3">
+              인기 상품을<br class="br" />
+              확인해보세요
+            </h3>
+            <p class="text_p">
+              가장 HOT한 중고거래 물품을<br />
+              판다 마켓에서 확인해보세요
+            </p>
+          </div>
         </div>
       </section>
     </article>
 
+      <!-- search 영역 -->
+      <article class="article1">
+        <section class="section_container search_box">
+              <img
+                class="article_section_img"
+                src="./img/Img_home_02.png"
+                alt=""
+              />
+            <div class="search_text_wrap">
+              <span class="text_color">Search </span>
+              <h3 class="text_h3">
+                구매를 원하는<br class="br" />
+                상품을 검색하세요
+              </h3>
+              <p class="text_p">
+                구매하고 싶은 물품은 검색해서<br />
+                쉽게 찾아보세요
+              </p>
+            </div>
+        </section>
+      </article>
+
+      <!-- register 영역 -->
+      <article class="article1">
+        <section class="section_container">
+            <img
+              class="article_section_img2"
+              src="./img/Img_home_03.png"
+              alt=""
+            />
+          <div class="text_wrap">
+            <span class="text_color">register</span>
+            <h3 class="text_h3">
+              판매를 원하는<br class="br" />
+              상품을 등록하세요
+            </h3>
+            <p class="text_p">
+              어떤 물건이든 판매하고 싶은 상품을<br />
+              쉽게 등록하세요
+            </p>
+          </div>
+        </section>
+      </article>
+
     <!-- article 영역 -->
     <article class="article_bg_color">
       <section class="article_container">
-        <div class="article_title_wrap2">
+        <div class="article_title_wrap">
           <h2 class="tilte2_text">
             믿을수있는<br />
             판다마켓 중고 거래
